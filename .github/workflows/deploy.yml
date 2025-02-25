@@ -32,5 +32,6 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /home/ubuntu  # Change directory to your app location
-          git pull origin main  # Fetch latest code
-          npm install  # Install dependencies
+          git init
+          git clone https://github.com/Zayan-ahmed953/cicd-pipeline.git # Fetch latest code
+          # npm install  # Install dependencies
