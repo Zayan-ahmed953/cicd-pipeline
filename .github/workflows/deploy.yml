@@ -31,7 +31,7 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /home/ubuntu  # Change directory to your app location
+          cd /home/ec2-user  # Change directory to your app location
           git init
           git clone https://github.com/Zayan-ahmed953/cicd-pipeline.git # Fetch latest code
           # npm install  # Install dependencies
