@@ -32,6 +32,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
           cd /home/ec2-user  # Change directory to your app location
-          git init
-          git clone https://github.com/Zayan-ahmed953/cicd-pipeline.git # Fetch latest code
+          echo "this is from github actions" >> github_aaactions.txt
+          # git init
+          # git clone https://github.com/Zayan-ahmed953/cicd-pipeline.git # Fetch latest code
           # npm install  # Install dependencies
