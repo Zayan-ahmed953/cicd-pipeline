@@ -31,6 +31,6 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-          cd /home/ubuntu/app  # Change directory to your app location
+          cd /home/ec2-user/from_github_action  # Change directory to your app location
           git pull origin main  # Fetch latest code
           npm install  # Install dependencies
